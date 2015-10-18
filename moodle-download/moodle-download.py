@@ -113,6 +113,10 @@ for course in courses.iterkeys():
 					print '%s: Downloading "%s"...' % (course, os.path.basename(dest))
 					browser.retrieve(src, filename = dest)
 
+					if config['desktop-notifications']:
+						summary, body = u'%s' % course, '%s: %s' % (os.path.basename(dest), config['desktop-notification-text'] if config.has_key('desktop-notification') else 'Download finished')
+						notify(summary, body)
+
 					if config.has_key('symlink-on-desktop') and config['symlink-on-desktop']:
 						symlinkdest, symlinksrc = dest, '%s/Desktop/%s-%s' % (os.getenv('HOME'), courses[course]['short'], os.path.basename(dest))
 						if not os.path.exists(symlinksrc):

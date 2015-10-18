@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: UTF-8 -*-
 
-__all__ = ['login', 'LoginException']
+__all__ = ['notify', 'login', 'LoginException']
 
 class LoginException(Exception):
 	pass
@@ -26,3 +26,10 @@ def login(browser, url, config):
 
 	if not [element.text for element in browser.links() if element.text == 'Logout']:
 		raise LoginException('Something went wrong. Is your username/password correct?')
+
+def notify(summary, body):
+
+	from pgi.repository import Notify
+
+	Notify.init('moodle-download')
+	Notify.Notification.new(summary, body, '').show()
