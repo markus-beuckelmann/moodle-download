@@ -1,3 +1,3 @@
 mechanize
 docopt
-git+https://github.com/posborne/dbus-python.git
+pgi
