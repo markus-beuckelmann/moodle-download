@@ -1,0 +1,10 @@
+{
+	"server" : "elearning2.uni-heidelberg.de",
+	"username" : "***",
+	"password" : "***",
+	"user-agent" : "moodle-download",
+	"desktop-notifications" : true,
+	"desktop-notification-text" : "Download finished",
+	"symlink-on-desktop" : false,
+	"pad-with-zeros" : 2
+}
