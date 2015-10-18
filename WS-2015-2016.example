@@ -1,0 +1,23 @@
+{
+	"Theoretical Statistical Physics": {
+		"id" : 10141,
+		"short": "TSP",
+		"downloads" : [
+			["uebung(\\d\\d?).pdf", "Exercise-{#}.pdf", "~/WS-2015-2016/Theoretical Statistical Physics"]
+		]
+	},
+	"Artificial Intelligence": {
+		"id" : 10038,
+		"short": "AI",
+		"downloads" : [
+			[".*lecture(\\d{1,6}).pdf", "Lecture-{#}.pdf", "~/WS-2015-2016/Artificial Intelligence"]
+		]
+	},
+	"Environmental Physics": {
+		"id" : 9947,
+		"short": "EnvPhys",
+		"downloads" : [
+			["MKEP4_Exercise(\\d\\d)_WS1516.pdf", "Exercise-{#}.pdf", "~/WS-2015-2016/Environmental Physics"]
+		]
+	}
+}
