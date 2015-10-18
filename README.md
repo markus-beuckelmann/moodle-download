@@ -25,7 +25,7 @@ All profile files must be valid JSON files. For every course you take, add a new
 Requirements
 ------------
 
-Please install the following Python packages: [docopt](https://pypi.python.org/pypi/docopt), [mechanize](https://pypi.python.org/pypi/mechanize/), [dbus-python](https://pypi.python.org/pypi/dbus-python/). You can do that by running:
+Please install the following Python packages: [docopt](https://pypi.python.org/pypi/docopt), [mechanize](https://pypi.python.org/pypi/mechanize/), [pgi](https://pypi.python.org/pypi/pgi/). You can do that by running:
 
 `sudo pip install -r requirements.txt`
 
